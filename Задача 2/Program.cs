@@ -6,12 +6,13 @@ int Number = Convert.ToInt32 (Console.ReadLine());
 
 if (Number >= 100)
 {
-    while (Number >= 999 ) Number /= 10;
+    while (Number >= 999 ) 
     {
-        int Tretye = (Number % 10);
-        Console.Write ("Третья цифра:");
-        Console.WriteLine (Tretye);
+        Number /= 10;
     }
+    int Tretye = (Number % 10);
+    Console.Write ("Третья цифра:");
+    Console.WriteLine (Tretye);
 }
 else
 {
